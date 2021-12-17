@@ -9,5 +9,8 @@
 </head>
 <body>
   <app-root></app-root>
+  <app-Strike-through></app-Strike-through>
+  <app-goal-details *ngIf="goal.showDescription" [goal]='goal' (isComplete)= 'completeGoal($event,i)'></app-goal-details>
+ <app-goal></app-goal>
 </body>
 </html>
